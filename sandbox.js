@@ -1,28 +1,29 @@
-// arrays
-var names = ["luigi", "mario", "yoshi"];
-names.push("toad");
-console.log(names);
-var numbers = [10, 20, 30, 40];
-numbers.push(50);
-console.log(numbers);
-var mixed = ["Ken", 4, "Chun-Li", 8, 9];
-mixed.push("Ryu");
-mixed.push(10);
+// Explicit types
+var character;
+var age;
+var isLoggedIn;
+age = 20;
+isLoggedIn = true;
+character = "Olá, mundo";
+// Arrays
+var ninjas = [];
+ninjas = ["Mario", "Yoshi"];
+// Union types
+var mixed = [];
+mixed.push("Hello");
+mixed.push(20);
 console.log(mixed);
+var uid;
+uid = "123";
+uid = 123;
 // Objects
-var ninja = {
-    name: "Mario",
-    belt: "Black",
-    age: 30
+var ninjaOne;
+ninjaOne = { name: "Yoshi", age: 30 };
+var ninjaTwo;
+ninjaTwo = {
+    name: "Ryu",
+    age: 30,
+    beltColour: "Black"
 };
-console.log(ninja);
-ninja.age = 20;
-ninja.name = "Ryu";
-//ninja.age = '30' Can't be done;
-//ninja.skills = ["fighting", "sneaking"] Can't be done;
-ninja = {
-    name: "Yoshi",
-    belt: "Orange",
-    age: 40
-};
-// Can be done, whilst it keep the same properties from the original object;
+console.log(ninjaOne);
+console.log(ninjaTwo);

@@ -1,40 +1,42 @@
-// arrays
-let names: string[] = ["luigi", "mario", "yoshi"]
+// Explicit types
+let character: string;
+let age: number;
+let isLoggedIn: boolean;
 
-names.push("toad");
+age = 20;
+isLoggedIn = true;
+character = "Olá, mundo";
 
-console.log(names);
+// Arrays
+let ninjas: string[] = [];
+ninjas = ["Mario", "Yoshi"];
 
-let numbers: number[] = [10, 20, 30, 40];
+// Union types
+let mixed: (string | number)[] = [];
+mixed.push("Hello");
+mixed.push(20);
+console.log(mixed);
 
-numbers.push(50);
-
-console.log(numbers);
-
-let mixed = ["Ken", 4, "Chun-Li", 8, 9];
-
-mixed.push("Ryu");
-mixed.push(10);
-
-console.log(mixed)
+let uid: string|number;
+uid = "123";
+uid = 123;
 
 // Objects
+let ninjaOne: object;
+ninjaOne = { name: "Yoshi", age: 30 };
 
-let ninja = {
-  name: "Mario",
-  belt: "Black",
-  age: 30
-}
+let ninjaTwo: {
+  name: string,
+  age: number,
+  beltColour: string
+};
 
-console.log(ninja);
-ninja.age = 20;
-ninja.name = "Ryu";
-//ninja.age = '30' Can't be done;
-//ninja.skills = ["fighting", "sneaking"] Can't be done;
+ninjaTwo = {
+  name: "Ryu",
+  age: 30,
+  beltColour: "Black"
+};
 
-ninja = {
-  name: "Yoshi",
-  belt: "Orange",
-  age: 40
-}
-// Can be done, whilst it keep the same properties from the original object;
+console.log(ninjaOne);
+console.log(ninjaTwo);
+
